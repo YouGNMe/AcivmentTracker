@@ -1,0 +1,205 @@
+/* Сброс стилей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #111;
+  color: #fff;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+  width: 100vw;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #00ffaa;
+}
+
+/* Фильтры */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.filters select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+background-color: #ffaa00;
+}
+
+/* Игры */
+.game-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.game-card {
+
+  background: #1e1e1e;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,255,170,0.3);
+}
+
+.game-card img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.game-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #00ffaa;
+}
+/* Для страницы с ачивками */
+
+header h1 {
+  color: #ffaa00;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+#completion-status {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7); /* чёрный полупрозрачный фон */
+  padding: 0.5rem 1rem; /* отступы внутри */
+  display: inline-block; /* чтоб фон был только под текстом */
+  border-radius: 8px; /* опционально, скругление */
+}
+
+.achievement-list ul {
+  list-style: none;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.achievement-list li {
+  background: #1e1e1e;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: background 0.2s ease;
+}
+
+.achievement-list li:hover {
+  background: #2c2c2c;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #ffaa00;
+}
+.achievement-list li input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+  color: #777;
+  opacity: 0.6;
+
+}
+ button{
+    padding: 10px;
+    margin-bottom: 5%;
+    background-color: #ffaa00;
+    border-radius: 8px;
+    margin-left: 10px;
+    
+
+ }
+.header-stray{
+    background-image: url(assets/images/stray.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    margin: 0;
+}
+.achievement-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #1e1e1e;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.achiev-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.achiev-text .title {
+  font-weight: bold;
+}
+
+.achiev-text .desc {
+  margin: 0;
+}
+
+.achievement-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.achievement-item.completed .achiev-text {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+input[type="checkbox"]:checked + .achiev-text {
+  text-decoration: line-through;
+  color: #777;
+}
+.header-house-flipper-2{
+    background-image: url(assets/images/house-flipper-2.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    margin: 0;
+}
+#progress-text {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7); /* или любой другой */
+  padding: 0.4rem 1rem;
+  display: inline-block;
+  border-radius: 8px;
+  margin-top: 0rem;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Achievement Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎯 Мой трекер ачивок</h1>
+  </header>
+
+  <section class="filters">
+    <label for="platform">Платформа:</label>
+    <select id="platform">
+      <option value="all">Все</option>
+      <option value="PS5">PS5</option>
+      <option value="PC">PC</option>
+    </select>
+  </section>
+
+  <main class="game-list">
+    <a href="stray.html" class="game-card" data-platform="PS5">
+      <img src="assets/images/stray.jpg" alt="Stray cover">
+      <h2>Stray</h2>
+      <p>Платформа: PS5</p>
+     <p id="status-stray">Stray: ...</p>
+    </a>
+
+     <a href="deathloop.html" class="game-card" data-platform="PC">
+        <img src="assets/images/deathloop.jpg" alt="Deathloop Cover">
+        <h2>Deathloop</h2>
+        <p>Platform: PC</p>
+        <p>Status: In work</p>
+     </a>
+
+        <a href="houseflipper.html" class="game-card" data-platform="PC">
+        <img src="assets/images/house-flipper-2.avif" alt="HouseFlipper Cover">
+        <h2>House Flipper</h2>
+        <p>Platform: PC</p>
+        <p>Status: In work</p>
+     </a>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<script>
+  const status = localStorage.getItem("status-Stray");
+  const statusText = status === "done" ? "Завершено" : "В процессе";
+  document.getElementById("status-stray").textContent = `Stray: ${statusText}`;
+</script>

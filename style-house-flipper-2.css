@@ -1,0 +1,54 @@
+header{
+     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    margin: 0;
+    background-image: url(assets/images/house-flipper-2.avif);
+}
+ button{
+    padding: 10px;
+    margin-bottom: 5%;
+    background-color: #ffaa00;
+    border-radius: 8px;
+}
+.achievement-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #1e1e1e;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.achiev-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.achiev-text .title {
+  font-weight: bold;
+}
+
+.achiev-text .desc {
+  margin: 0;
+}
+
+.achievement-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.achievement-item.completed .achiev-text {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+input[type="checkbox"]:checked + .achiev-text {
+  text-decoration: line-through;
+  color: #777;
+}

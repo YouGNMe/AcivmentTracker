@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stray – Трофеи</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header-stray">
+    <h1>🐾 Stray – Ачивки</h1>
+    <p id="completion-status">Статус: В процессе</p>
+   <p id="progress">
+  <span id="progress-text">Выполнено: 0 из 24</span>
+   <span id="trophy" style="display: none;">🏆</span>
+</p>
+
+  </header>
+<button onclick="history.back()">← Назад</button>
+  <main class="achievement-list">
+    <ul>
+     <li class="achievement-item">
+  <input type="checkbox" >
+  <div class="achiev-text">
+    <span class="title">Кот-болтун</span>
+    <p class="desc">Мяукните 100 раз</p>
+  </div>
+  <img src="assets/images/100timesmiau.jpg" alt="achievement icon">
+</li>
+<li class="achievement-item">
+  <input type="checkbox" >
+  <div class="achiev-text">
+    <span class="title">Кот-а-пульта</span>
+    <p class="desc"> Подпрыгните 50 раз</p>
+  </div>
+  <img src="assets/images/kotapulta.jpg" alt="achievement icon">
+</li>
+<li class="achievement-item">
+  <input type="checkbox" >
+  <div class="achiev-text">
+    <span class="title">Продуктивный день</span>
+    <p class="desc"> Спите больше часа</p>
+  </div>
+  <img src="assets/images/sleep.jpg" alt="achievement icon">
+</li>
+<li class="achievement-item">
+  <input type="checkbox" >
+  <div class="achiev-text">
+    <span class="title">Кот-данк</span>
+    <p class="desc"> Забросьте мяч в корзину</p>
+  </div>
+  <img src="assets/images/catdank.jpg" alt="achievement icon">
+</li>
+<li class="achievement-item">
+  <input type="checkbox" >
+  <div class="achiev-text">
+    <span class="title">Кота не догонишь</span>
+    <p class="desc">Завершите первую погоню не попавшись Зуркам</p>
+  </div>
+  <img src="assets/images/cantcatch.jpg" alt="achievement icon">
+</li>
+<li class="achievement-item">
+  <input type="checkbox">
+  <div class="achiev-text">
+    <span class="title">Хитрокот(Секретный)</span>
+    <p class="desc"> Пройти Мидтаун не попавшись Робо-Стражам</p>
+  </div>
+  <img src="assets/images/ninjacat.jpg" alt="achievement icon">
+</li>
+<li class="achievement-item">
+  <input type="checkbox" data-id=>
+  <div class="achiev-text">
+    <span class="title">Кот без жизней</span>
+    <p class="desc">Умереть 9 раз за одно прохождениие</p>
+  </div>
+  <img src="assets/images/nolive.jpg" alt="achievement icon">
+</li>
+<li class="achievement-item">
+  <input type="checkbox" data-id=>
+  <div class="achiev-text">
+    <span class="title">Царапки</span>
+    <p class="desc">Поцарапайте винил в клубе</p>
+  </div>
+  <img src="assets/images/zarap.jpg" alt="achievement icon">
+</li>
+<li class="achievement-item">
+  <input type="checkbox" >
+  <div class="achiev-text">
+    <span class="title"> Пацифист</span>
+    <p class="desc"> Пройдите канализацию, не убив ни одного Зурка</p>
+  </div>
+  <img src="assets/images/peace.jpg" alt="achievement icon">
+</li>
+<li class="achievement-item">
+  <input type="checkbox" >
+  <div class="achiev-text">
+    <span class="title">Скорокот</span>
+    <p class="desc">Пройдите игру менее чем за 2 часа</p>
+  </div>
+  <img src="assets/images/speedrun.jpg" alt="achievement icon">
+</li>
+<li class="achievement-item">
+  <input type="checkbox" >
+  <div class="achiev-text">
+    <span class="title">Неудачный прыжок</span>
+    <p class="desc">Упадите внутри города</p>
+  </div>
+  <img src="assets/images/unluky.jpg" alt="achievement icon">
+</li>
+<li class="achievement-item">
+  <input type="checkbox" >
+  <div class="achiev-text">
+    <span class="title">Не один</span>
+    <p class="desc">Познакомьтесь с B-12</p>
+  </div>
+  <img src="assets/images/notalone.jpg" alt="achievement icon">
+</li>
+<li class="achievement-item">
+  <input type="checkbox" >
+  <div class="achiev-text">
+    <span class="title">Язык проглотил?</span>
+    <p class="desc">Попросите B-12 перевести, что говорит робот.</p>
+  </div>
+  <img src="assets/images/yasik.jpg" alt="achievement icon">
+</li>
+<li class="achievement-item">
+  <input type="checkbox" >
+  <div class="achiev-text">
+    <span class="title">Кошачья дорожка</span>
+    <p class="desc">Доберитесь до Мидтауна</p>
+  </div>
+  <img src="assets/images/katsway.jpg" alt="achievement icon">
+</li>
+<li class="achievement-item">
+  <input type="checkbox" >
+  <div class="achiev-text">
+    <span class="title">Аль-Кот-Рас</span>
+    <p class="desc">Отправляйтесь в тюрьму</p>
+  </div>
+  <img src="assets/images/alkotras.jpg" alt="achievement icon">
+</li>
+<li class="achievement-item">
+  <input type="checkbox" >
+  <div class="achiev-text">
+    <span class="title">Эврика</span>
+    <p class="desc">Пройдите игру и откройте город</p>
+  </div>
+  <img src="assets/images/evrika.jpg" alt="achievement icon">
+</li>
+<li class="achievement-item">
+  <input type="checkbox" >
+  <div class="achiev-text">
+    <span class="title">Мяу-Лодия</span>
+    <p class="desc">Принесите Моруску все ноты</p>
+  </div>
+  <img src="assets/images/yasik.jpg" alt="achievement icon">
+</li>
+<li class="achievement-item">
+  <input type="checkbox" >
+  <div class="achiev-text">
+    <span class="title">Любопытство кошку сгубило </span>
+    <p class="desc">Наденьте на себя бумажный пакет</p>
+  </div>
+  <img src="assets/images/paket.jpg" alt="achievement icon">
+</li>
+<li class="achievement-item">
+  <input type="checkbox" >
+  <div class="achiev-text">
+    <span class="title">Кот-астрофа</span>
+    <p class="desc">Попробуйте сыграть в маджонг с роботами</p>
+  </div>
+  <img src="assets/images/kotapulta.jpg" alt="achievement icon">
+</li>
+
+<li class="achievement-item">
+  <input type="checkbox" >
+  <div class="achiev-text">
+    <span class="title">Лучший друг кота</span>
+    <p class="desc">Потритесь о 5 роботов</p>
+  </div>
+  <img src="assets/images/bestfriend.jpg" alt="achievement icon">
+</li>
+
+<li class="achievement-item">
+  <input type="checkbox" >
+  <div class="achiev-text">
+    <span class="title">Я Помню!</span>
+    <p class="desc">Соберите все воспоминания B-12</p>
+  </div>
+  <img src="assets/images/i remember.jpg" alt="achievement icon">
+</li>
+
+<li class="achievement-item">
+  <input type="checkbox" >
+  <div class="achiev-text">
+    <span class="title">Теле-кот</span>
+    <p class="desc">Просмотрите все телеканалы</p>
+  </div>
+  <img src="assets/images/telecat.jpg" alt="achievement icon">
+</li>
+<li class="achievement-item">
+  <input type="checkbox" >
+  <div class="achiev-text">
+    <span class="title">Территория</span>
+    <p class="desc">Царапайтесь в каждой главе</p>
+  </div>
+  <img src="assets/images/territorum.jpg" alt="achievement icon">
+</li>
+<li class="achievement-item">
+  <input type="checkbox" >
+  <div class="achiev-text">
+    <span class="title">Значки</span>
+    <p class="desc">Соберите все значки</p>
+  </div>
+  <img src="assets/images/znaki.jpg" alt="achievement icon">
+</li>
+
+  </main>
+  <script>
+    function updateProgress() {
+      const checkboxes = document.querySelectorAll('.achievement-item input[type="checkbox"]');
+      const checked = document.querySelectorAll('.achievement-item input[type="checkbox"]:checked');
+      const progressText = document.getElementById('progress-text');
+      const trophy = document.getElementById('trophy');
+      const statusText = document.getElementById("completion-status");
+
+      progressText.textContent = `Выполнено: ${checked.length} из ${checkboxes.length}`;
+      statusText.textContent = `Статус: ${checked.length === checkboxes.length ? "Завершено" : "В процессе"}`;
+      trophy.style.display = (checked.length === checkboxes.length) ? 'inline' : 'none';
+
+      checkboxes.forEach((cb, index) => {
+        const li = cb.closest('.achievement-item');
+        li.classList.toggle('completed', cb.checked);
+        localStorage.setItem(`achievement-${index}`, cb.checked);
+      });
+
+      localStorage.setItem("status-Stray", checked.length === checkboxes.length ? "done" : "in progress");
+    }
+
+    function restoreCheckboxes() {
+      const checkboxes = document.querySelectorAll('.achievement-item input[type="checkbox"]');
+      checkboxes.forEach((cb, index) => {
+        const saved = localStorage.getItem(`achievement-${index}`);
+        cb.checked = saved === 'true';
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      restoreCheckboxes();
+      document.querySelectorAll('.achievement-item input[type="checkbox"]').forEach(cb => {
+        cb.addEventListener('change', updateProgress);
+      });
+      updateProgress();
+    });
+  </script>
+</body>
+</html>
